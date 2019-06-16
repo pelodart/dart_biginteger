@@ -171,7 +171,7 @@ static BigInteger facultyBig(BigInteger n) {
 	return n * facultyBig(n - BigInteger.One);
   }
 }
-```dart
+```
 
 Mit folgendem Testrahmen sehen die ersten fünfzig Fakultäten so aus:
 
