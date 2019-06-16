@@ -16,6 +16,7 @@ Erste Hinweise zur ``BigInteger``-Klasse (Konstruktoren) finden Sie in Tabelle 1
 | ``BigInteger`` | ``BigInteger(String s);``<br/> Erzeugt ein ``BigInteger``-Objekt mit Hilfe der Beschreibung einer Zahl in Form einer Zeichenkette. Die Zeichenkette darf optional mit einem Plus- oder Minuszeichen beginnen, um das Vorzeichen der Zahl festzulegen. Danach folgen beliebig viele dezimale Ziffern: <br/> ``BigInteger a ("+11111111111111111111111111111111111111");`` <br/> Mit Ausnahme von Punkten dürfen in der Zeichenkette keine anderen Zeichen enthalten sein. Punkte sind der besseren Lesbarkeit halber in der Zeichenkette zulässig, wie etwa ``"123.456.789"``.|
 | ``BigInteger.fromInt`` | ``BigInteger.fromInt(int n);``<br/> Erzeugt ein ``BigInteger``-Objekt zu einem ``int``-Wert ``n``. |
 | ``BigInteger.clone`` | ``BigInteger.clone(BigInteger number);``<br/> Erzeugt eine Kopie eines  ``BigInteger``-Objekts - siehe Parameter ``number``. |
+
 Tabelle 1. Konstruktoren der Klasse ``BigInteger``.
 
 Das Vorzeichen, die Anzahl der Ziffern und das Prädikat IsNull werden in der Klasse ``BigInteger`` durch *getter*-Methoden realisiert (Tabelle 2):
@@ -25,6 +26,7 @@ Das Vorzeichen, die Anzahl der Ziffern und das Prädikat IsNull werden in der Kl
 | ``Sign``   | ``bool get Sign``<br/> Liefert das Vorzeichen der Zahl zurück, ``true`` entspricht einer positiven Zahl, ``false`` einer negativen. |
 | ``Cardinality``   | ``int get Cardinality``<br/> Liefert die Anzahl der Ziffern der Zahl zurück, auch *Stelligkeit* der ganzen Zahl genannt. |
 | ``IsNull``   | ``bool get IsNull``<br/> Liefert ``true`` zurück, wenn die Zahl den Wert 0 besitzt, andernfalls ``false``. |
+
 Tabelle 2. *getter*-Methoden der Klasse ``BigInteger``.
 
 ## Arithmetische Operatoren der Klasse `BigInteger`
@@ -74,6 +76,7 @@ Nach diesen Hilfestellungen fassen wir die soeben besprochenen arithmetischen Op
 | ``operator*``   | ``BigInteger operator* (BigInteger number);``<br/> Liefert jeweils ein neues BigInteger-Objekt zurück. Der Wert ergibt sich durch das Resultat der mathematischen Operation ``this`` * ``number``. |
 | ``operator/``   | ``BigInteger operator/ (BigInteger number);``<br/> Liefert jeweils ein neues BigInteger-Objekt zurück. Der Wert ergibt sich durch das Resultat der mathematischen Operation ``this`` / ``number``. |
 | ``operator%``   | ``BigInteger operator% (BigInteger number);``<br/> Liefert jeweils ein neues BigInteger-Objekt zurück. Der Wert ergibt sich durch das Resultat der mathematischen Operation ``this`` modulo ``number``. |
+
 Tabelle 3. Arithmetische Operatoren der Klasse ``BigInteger``.
 
 ## Vergleichsoperatoren der Klasse `BigInteger`
@@ -84,6 +87,7 @@ Große Zahlen kann man vergleichen, etwa auf Gleichheit oder auf kleiner(-gleich
 |:-------------- |---|
 | ``operator==``<br/> ``operator!=`` | ``@override``<br/>``bool operator ==(Object other);``<br/> Vergleicht den Wert zweier BigInteger-Objekte auf Gleichheit. *Hinweis*: Den !=-Operator kann in Dart nicht überladen werden.
 | ``operator<``<br/>``operator<=``<br/>``operator>``<br/> ``operator>=``<br/> | ``bool operator <(Object other);``<br/>``bool operator <(Object other);``<br/>``bool operator <(Object other);``<br/>``bool operator <(Object other);``<br/> Umsetzung der mathematischen Relationen kleiner, kleiner-gleich, größer und größer-gleich auf zwei ``BigInteger``-Objeke mittels der binären Operatoren <, <=, > und >=. |
+
 Tabelle 4. Vergleichsoperatoren Operatoren der Klasse ``BigInteger``.
 
 ## Hilfsmethoden der Klasse `BigInteger`
