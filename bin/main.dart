@@ -7,7 +7,7 @@ import '../lib/big_prime_numbers.dart';
 import '../lib/test_routines.dart';
 
 void main() {
-  // testGeneral();
+  testGeneral();
   testMathFunctions();
   print('Done');
 }
@@ -39,15 +39,12 @@ void testGeneral() {
 
 void testMathFunctions() {
   // testing prime numbers
-//   BigPrimeNumbers.test_01();
-//   BigPrimeNumbers.test_02();
-
+  BigPrimeNumbers.test_01();
+  BigPrimeNumbers.test_02();
 
   // testing faculties
-  // BigFaculty.test_01(50);  // using int data-type (partially wrong results)
+  BigFaculty.test_01(50); // using int data-type (partially wrong results)
   BigFaculty.test_02(50); // using BigInteger
-
-  return; // TODO: Wieder entfernen !!!
 
   // testing fibonacci numbers
   BigFibonacci.test_01(30);  // built-in data types, recursive
