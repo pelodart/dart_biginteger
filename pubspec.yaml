@@ -1,7 +1,7 @@
 name: biginteger
 version: 1.0.0
 description: >-
-  BigInteger class to implement Exact Arithmetic
+  BigInteger class to implement exact arithmetic operations.
 author: PeLo
 dependencies:
 environment:
