@@ -2,7 +2,8 @@ name: biginteger
 version: 1.0.0
 description: >-
   BigInteger class to implement exact arithmetic operations.
-author: PeLo
-dependencies:
+author: Peter Loos <peter.loos@gmx.de>
+homepage: http://peterloos.de
 environment:
   sdk: '>=2.2.0 <3.0.0'
+dependencies:
